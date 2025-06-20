@@ -1,7 +1,10 @@
 # 📝 QuickNote
 A simple note-taking app with full CRUD functionality and a clean, responsive UI. Built using the **MERN** stack and best practices, QuickNote is a lightweight yet functional project that showcases full-stack development skills.
 
----
+## 🚀 Live Demo
+
+👉 [QuickNote on Render](https://quicknote-irin.onrender.com/)
+
 
 ## 🔧 Features
 - 📝 Create, Read, Update, and Delete (CRUD) notes
@@ -9,7 +12,6 @@ A simple note-taking app with full CRUD functionality and a clean, responsive UI
 - ✅ Data modeling with Mongoose schemas
 - 🚫 Rate limiting with Upstash (100 requests/minute)
 
----
 
 ## 🛠️ Tech Stack
 
@@ -20,18 +22,15 @@ A simple note-taking app with full CRUD functionality and a clean, responsive UI
 - **Lucide React** – Icon library  
 - **Upstash** – Serverless Redis for rate limiting  
 
----
 
 ## 📚 Motivation
 QuickNote was built to learn the MERN stack and demonstrate full-stack web development skills through a hands-on project.
 
----
 
 ## 🚀 Getting Started
 
 Follow these steps to set up the project locally.
 
----
 
 ## 📦 Prerequisites
 
@@ -41,7 +40,6 @@ Make sure you have the following installed:
 - [Node.js](https://nodejs.org/) (Recommended: LTS version)
 - [npm](https://www.npmjs.com/) (comes with Node.js)
 
----
 
 ## 🔧 Installation
 
@@ -57,7 +55,6 @@ git clone https://github.com/Niranjan-A/quicknote.git
 cd quicknote
 ```
 
----
 
 ## 🧪 Environment Variables Setup
 
@@ -71,7 +68,6 @@ UPSTASH_REDIS_REST_TOKEN=<your_redis_rest_token>
 NODE_ENV=development
 ```
 
----
 
 ## 🖥️ Run the Application
 
