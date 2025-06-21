@@ -2,7 +2,7 @@ import Note from '../models/Note.js';
 
 export async function getAllNotes(_, res) {
   try {
-    const notes = await Note.find().sort({ createdAt: -1 }); //-1 ensures descending sort (newest notes first)
+    const notes = await Note.find().sort({ updatedAt: -1 }); //Sort notes by most recently updated first (descending order)
     res.status(200).json(notes);
   } catch (error) {
     console.error('Error in the getAllNotes controller fn: ', error);
