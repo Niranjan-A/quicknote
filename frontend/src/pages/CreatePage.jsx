@@ -54,7 +54,10 @@ const CreatePage = () => {
             to={'/'}
             className="btn btn-ghost mb-6"
           >
-            <ArrowLeftIcon className="size-5" />
+            <ArrowLeftIcon
+              className="size-5"
+              aria-hidden="true"
+            />
             Back to Notes
           </Link>
 

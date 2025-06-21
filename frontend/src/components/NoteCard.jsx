@@ -29,21 +29,33 @@ const NoteCard = ({ note, setNotes }) => {
       border-t-4 border-solid border-primary"
     >
       <div className="card-body">
-        <h3 className="card-title text-base-content">{note.title}</h3>
+        <h2 className="card-title text-base-content">{note.title}</h2>
         <p className="text-base-content/70 line-clamp-3">{note.content}</p>
         <div className="card-actions justify-between items-center mt-4">
           <span className="text-sm text-base-content/60">
-            {formateDate(new Date(note.createdAt))}
+            {formateDate(new Date(note.updatedAt))}
           </span>
           <div className="flex items-center gap-1">
-            <button className="btn btn-ghost btn-xs text-accent">
-              <NotebookPenIcon className="size-4" />
+            <button
+              className="btn btn-ghost btn-xs text-accent"
+              aria-label="Edit note"
+              title="Edit note"
+            >
+              <NotebookPenIcon
+                className="size-4"
+                aria-hidden="true"
+              />
             </button>
             <button
               className="btn btn-ghost btn-xs text-error"
               onClick={(e) => handleDelete(e, note._id)}
+              aria-label="Delete note"
+              title="Delete note"
             >
-              <Trash2Icon className="size-4" />
+              <Trash2Icon
+                className="size-4"
+                aria-hidden="true"
+              />
             </button>
           </div>
         </div>

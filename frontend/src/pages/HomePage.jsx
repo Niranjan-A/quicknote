@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar';
 import NoteCard from '../components/NoteCard';
 import NoteNotFound from '../components/NoteNotFound';
 import RateLimitedUI from '../components/RateLimitedUI';
+import Footer from '../components/Footer';
 
 const HomePage = () => {
   const [isRateLimited, setIsRateLimited] = useState(false);
@@ -39,7 +40,7 @@ const HomePage = () => {
 
       {isRateLimited && <RateLimitedUI />}
 
-      <div className="max-w-7xl mx-auto px-8 py-4 mt-6">
+      <div className="max-w-7xl mx-auto px-8 pt-4 pb-20 mt-6">
         {loading && (
           <div className="text-center text-primary py-10">Loading Notes...</div>
         )}
@@ -58,6 +59,7 @@ const HomePage = () => {
           </div>
         )}
       </div>
+      <Footer />
     </div>
   );
 };

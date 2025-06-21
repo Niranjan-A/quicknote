@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import { SparkleIcon, PlusIcon } from 'lucide-react';
+import { SparkleIcon, ClipboardPlusIcon } from 'lucide-react';
 
 const Navbar = () => {
   return (
@@ -7,7 +7,10 @@ const Navbar = () => {
       <div className="mx-auto max-w-6xl p-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <SparkleIcon className="size-7 text-primary" />
+            <SparkleIcon
+              className="size-7 text-primary"
+              aria-hidden="true"
+            />
             <h1 className="text-3xl font-bold text-primary font-mono tracking-tight">
               QuickNote
             </h1>
@@ -17,7 +20,10 @@ const Navbar = () => {
               to={'/create'}
               className="btn btn-primary"
             >
-              <PlusIcon className="size-5" />
+              <ClipboardPlusIcon
+                className="size-5"
+                aria-hidden="true"
+              />
               <span className="hidden sm:inline">Create Note</span>
             </Link>
           </div>

@@ -80,7 +80,10 @@ const UpdatePage = () => {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <LoaderCircleIcon className="animate-spin size-12 text-primary" />
+        <LoaderCircleIcon
+          className="animate-spin size-12 text-primary"
+          aria-hidden="true"
+        />
       </div>
     );
   }
@@ -93,7 +96,10 @@ const UpdatePage = () => {
               to="/"
               className="btn btn-ghost"
             >
-              <ArrowLeftIcon className="size-5" />
+              <ArrowLeftIcon
+                className="size-5"
+                aria-hidden="true"
+              />
               Back to Notes
             </Link>
 
@@ -101,7 +107,10 @@ const UpdatePage = () => {
               onClick={handleDelete}
               className="btn btn-outline btn-error"
             >
-              <Trash2Icon className="size-5" />
+              <Trash2Icon
+                className="size-5"
+                aria-hidden="true"
+              />
               Delete Note
             </button>
           </div>
